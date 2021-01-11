@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:ital,wght@0,300;0,600;0,700;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #181719;
+    height: 100vh;
+   
+}
+.wrapper{
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(24, 23, 25, 1);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+
+
+}
+main{
+    height: 100vh;
+}
+ .active {  
+    clip-path: circle(75%);
+    
+}
+.wrapper ul li ,a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+   
+    
+ 
+    
+}
+.menu .active {
+    font-weight: 700;
+}
+.menu{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   list-style: none;
+   text-align: center;
+   line-height: 20px;
+ 
+  
+  
+
+
+}
+.wrapper .menu li{
+  padding: 17px 0;
+}
+.meni{
+    position: absolute;
+    right: 0;
+    color: #fff;
+   font-size: 25px;
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    line-height: 70px;
+    background-color: rgba(24, 23, 25, 1);
+    z-index: 2;
+  
+    
+
+}
+#active:checked ~ .meni i:before{
+    content:"\f00d";
+  
+}
+input{
+    display: none;
+}
+.cancel{
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    line-height: 60px;
+    background-color: rgba(24, 23, 25, 1);
+ 
+
+}
+.boton{
+    
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    width: 115px;
+    height: 31px;
+    border: 1px solid  rgba(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 5px;
+}
+.section1{
+    padding: 30px 0;
+    
+   
+   
+  }
+
+.textos> p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 1);
+    width: 49%;
+    padding-bottom: 30px;
+
+
+
+}
+.textos{
+    margin-left: 13px;
+    padding-top: 20px;
+}
+
+.titulo{
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 90px;
+
+}
+small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+}
+small i{
+    
+    margin-left: 5px;
+}
+
+
+.cuadro ,img {
+    display:block;
+    width: 100%;
+   padding: 5px;
+  
+   
+   
+ 
+
+}
+
+.caja{
+    
+    box-sizing: border-box;
+    width:300px;
+    height: 138px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(24, 23, 25, 1);
+    z-index: 1;
+
+  
+}
+.caja{
+    padding: 7px 20px 0 10px;
+ 
+
+}
+.mini {
+    
+  
+    transform: translateY(-60px);
+    margin-left: 43px;
+
+    
+}
+
+
+.flex{
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.flex img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+    
+    
+   
+}
+
+.item p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 500;
+}
+.item small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgba(130, 130, 130, 1);
+    font-weight: 500;
+}
+h3{
+  padding: 10px 10px;
+  font-family: 'Lora', serif;
+  color: rgba(255, 255, 255, 1);
+font-size: 18px;
+font-weight: 700;
+
+}
+.none{
+    display: none;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    
+     
+    .meni{
+        display: none;
+    }
+    .cancel{
+        display: none;
+    }
+    
+
+   
+    .wrapper {  
+        clip-path: circle(75%);
+        
+    }
+    .wrapper{
+       position: inherit;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        
+       
+        
+        
+    
+      }
+      .menu{
+        position: fixed;
+        top: 0;
+        right:0;
+        transform: translate(5%,5%);
+        list-style: none;
+        text-align: center;
+        line-height: 30px;
+        display: flex;
+        
+         
+    
+     }
+     .menu li a{
+        margin-right: 70px;
+    
+   }
+     .boton{
+    
+        position: absolute;
+        left: 70px;
+        top: 20px;
+    width: 115px;
+    height: 31px;
+    border: 1px solid  rgba(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 5px;
+}
+     
+   
+    
+  main{
+      display: flex;
+      
+      
+  }
+  .cuadro ,img {
+    display:block;
+    width: 100%;
+    padding: 0;
+    
+
+}
+.cuadro{
+    width: 600px;
+}
+.section1{
+    flex: 1;
+    padding: 120px 70px;
+
+}
+
+.section2{
+    padding: 180px 0;
+    flex: 1;
+    transform: translateX(-60px);
+    
+
+}
+.textos{
+    margin: 0;
+   
+  
+}
+
+.textos> p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1);
+    width: 56%;
+    padding-bottom: 30px;
+
+
+
+}
+
+
+.titulo{
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 130px;
+
+}
+small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+}
+.flex img{
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+    
+    
+   
+}
+
+.caja{
+    
+    box-sizing: border-box;
+    width:350px;
+    height: 160px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(24, 23, 25, 1);
+    z-index: 1;
+
+  
+}
+.mini {
+    
+  
+    transform: translateY(-80px);
+    margin-left: 230px;
+    
+    
+   
+
+    
+}
+
+
+.flex{
+  display: flex;
+  align-items: center;
+  
+  
+}
+.caja{
+    padding: 15px 20px 0 20px;
+ 
+
+}
+h3{
+    font-size: 24px;
+padding: 20px 0;
+}
+.item{
+    line-height: 20px;
+}
+.item p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 500;
+}
+.item small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: rgba(130, 130, 130, 1);
+    font-weight: 500;
+}
+    
+
+
+ }
+    
