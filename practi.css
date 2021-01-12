@@ -43,10 +43,10 @@ main{
  
     
 }
-.menu .active {
+.nav .active {
     font-weight: 700;
 }
-.menu{
+.nav{
    position: absolute;
    top: 50%;
    left:50%;
@@ -60,7 +60,7 @@ main{
 
 
 }
-.wrapper .menu li{
+.wrapper .nav li{
   padding: 17px 0;
 }
 .meni{
@@ -113,6 +113,9 @@ input{
     text-align: center;
     padding: 5px 5px;
 }
+button{
+    background-color: transparent;
+}
 .section1{
     padding: 30px 0;
     
@@ -120,7 +123,7 @@ input{
    
   }
 
-.textos> p {
+.texts> p {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -133,12 +136,12 @@ input{
 
 
 }
-.textos{
+.texts{
     margin-left: 13px;
     padding-top: 20px;
 }
 
-.titulo{
+.title{
     font-family: 'Lora', serif;
     font-size: 36px;
     font-weight: 400;
@@ -158,10 +161,10 @@ small i{
 }
 
 
-.cuadro ,img {
+.picture ,img {
     display:block;
     width: 100%;
-   padding: 5px;
+   padding: 7px;
   
    
    
@@ -169,10 +172,10 @@ small i{
 
 }
 
-.caja{
+.box{
     
     box-sizing: border-box;
-    width:300px;
+    width:290px;
     height: 138px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgba(24, 23, 25, 1);
@@ -180,7 +183,7 @@ small i{
 
   
 }
-.caja{
+.box{
     padding: 7px 20px 0 10px;
  
 
@@ -272,7 +275,7 @@ font-weight: 700;
         
     
       }
-      .menu{
+      .nav{
         position: fixed;
         top: 0;
         right:0;
@@ -285,7 +288,7 @@ font-weight: 700;
          
     
      }
-     .menu li a{
+     .nav li a{
         margin-right: 70px;
     
    }
@@ -312,14 +315,14 @@ font-weight: 700;
       
       
   }
-  .cuadro ,img {
+  .picture ,img {
     display:block;
     width: 100%;
     padding: 0;
     
 
 }
-.cuadro{
+.picture{
     width: 600px;
 }
 .section1{
@@ -335,13 +338,13 @@ font-weight: 700;
     
 
 }
-.textos{
+.texts{
     margin: 0;
    
   
 }
 
-.textos> p {
+.texts> p {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -356,7 +359,7 @@ font-weight: 700;
 }
 
 
-.titulo{
+.title{
     font-family: 'Lora', serif;
     font-size: 48px;
     font-weight: 400;
@@ -380,7 +383,7 @@ small{
    
 }
 
-.caja{
+.box{
     
     box-sizing: border-box;
     width:350px;
@@ -410,7 +413,7 @@ small{
   
   
 }
-.caja{
+.box{
     padding: 15px 20px 0 20px;
  
 
