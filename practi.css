@@ -271,7 +271,7 @@ font-weight: 700;
      .boton{
     
         position: absolute;
-        left: 50px;
+        left: 80px;
         top: 20px;
     width: 115px;
     height: 31px;
@@ -290,17 +290,22 @@ font-weight: 700;
 
    }
    .section1{
-       padding: 120px 50px;
+       padding: 120px 20px;
       
    }
  
    .section2{
-       padding: 160px 60px 0 0;
+       padding: 160px 0 0 0;
        
    }
    main{
        display: flex;
        flex-direction: row;
+        width: 90%;
+        max-width: 1200px;
+       margin: auto;
+        
+    
   
        
    }
@@ -327,7 +332,7 @@ font-weight: 700;
     .boton{
     
         position: absolute;
-        left: 80px;
+        left: 140px;
         top: 20px;
     width: 115px;
     height: 31px;
@@ -369,6 +374,12 @@ font-weight: 700;
     
     
     }
+    main{
+        width: 90%;
+        max-width: 1280px;
+       margin: auto;
+        
+    }
     small{
         font-family: 'Montserrat', sans-serif;
         font-size: 1.8rem;
@@ -376,11 +387,11 @@ font-weight: 700;
         font-weight: 600;
     }
     .section2{
-        padding: 160px 60px 0 0; 
+        padding: 160px 0 0 0; 
         
     }
     .section1{
-        padding: 120px 80px;
+        padding: 120px 20px;
        
     }
     .box{
