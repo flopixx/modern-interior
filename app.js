@@ -1,7 +1,7 @@
 const navSile= ()=>{
 const burger=document.querySelector('.meni');
 const wrapper = document.querySelector('.wrapper');
-const caja=document.querySelector('.caja')
+const caja=document.querySelector('.box')
 
 
 burger.addEventListener('click', ()=>{
